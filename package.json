@@ -1,0 +1,12 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build:dev": "rm -rf build && mkdir build && tsc --project ./tsconfig.json",
+    "build:prod": "rm -rf build && mkdir build && tsc --project ./tsconfig.prod.json",
+    "start:dev": "yarn run build:dev && node build/index.js"
+  }
+}
