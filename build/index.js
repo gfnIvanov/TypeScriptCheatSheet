@@ -60,11 +60,3 @@ function makeBox(value) {
 const makeHammerBox = (makeBox);
 const makeWrenchBox = (makeBox);
 makeHammerBox(1); // Error
-export function doSomeWork() {
-    using file = new TempFile(".some_temp_file");
-    // use file...
-    if (someCondition()) {
-        // do some more work...
-        return;
-    }
-}
